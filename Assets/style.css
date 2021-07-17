@@ -38,6 +38,10 @@
     margin-left: 12px;
 }
 
+#searchbtnicon {
+    color: white;
+}
+
 #input {
     padding-right: 0;
 }
