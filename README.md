@@ -12,3 +12,5 @@ After this assignment, I will be working on my README generating assignment, and
 Side Note: For future assignments, I will be adding a note because I'm not sure if it's the same people grading my assignments or different people.
     Anyways, the reason why this assignment is so damn late is due to some complications in my personal life. My father was diagnosed with two types of cancer and much of my time was consumed taking care of him, being at the hospital, and making sure everything was alright. As a result, my homeworks got delayed and I haven't been able to be where I would have desired. 
     I just wanted to apologize to whoever is grading this and my upcoming late assignments.
+    
+Deployable Link: https://deerran.github.io/WeatherDashboard/
