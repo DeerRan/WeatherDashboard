@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel='stylesheet' href='./Assets/style.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" defer></script>
+    <title>Weather API</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id='headerRow' class='row justify-content-md-center'>
+            <div class='col-12' id='header'>
+                <p>Weather Dashboard</p>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class='col-4' id='side'>
+                <div class='row align-items-center'>
+                    <div class='col-12' id='header2'>
+                        <p>Search for a city!</p>
+                    </div>
+                    <div class='col-11' id='search'>
+                        <input type='text' id='input' class='col-9' placeholder="Search">
+                        <button class='button col-2 ' type='submit' id='searchbtn'>
+                            <span id='searchbtnicon'>Ah</span>
+                        </button>
+                    </div>
+                    <div class='col' id='history' onclick="bootlegSearch(event)">
+                    </div>
+                </div>
+            </div>
+            <div class='col-8' id='main'>
+                <div class='row'>
+                    <div class='col-11' id="current">
+                        <div class='row'>
+                            <div id='header3' class='col-5'>
+
+                            </div>
+                            <div id='icondiv' class='col-1'>
+                                <img src="https://openweathermap.org/img/wn/04n.png" alt="" id="icon" />
+                            </div>
+                            <div id='temperature' class='col-11'>
+                            </div>
+                            <div id='humidity' class='col-11'>
+                            </div>
+                            <div id='wind' class='col-11'>
+                            </div>
+                            <div class='row'>
+                                <div id='UVdiv' class='col-2'>
+                                    UV Index:
+                                </div>
+                                <div id='UVI' class='col-1'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='header4' class='col-11'>
+                    5-Day Forecasts:
+                </div>
+                <div class='row'>
+                    <div id='forecasts' class='col-2'>
+                        <div class='row'>
+                            <div class='col-9' id='forecastDate0'>
+                            </div>
+                            <div class='col-9' id='forecasticondiv'>
+                                <div class='row'>
+                                    <img class='align-self-center' src="" alt="" id="forecastIcon0" />
+                                </div>
+                            </div>
+                            <div class='col-9' id='forecastTemp0'>
+                            </div>
+                            <div class='col-9' id='forecastHumidity0'>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id='forecasts' class='col-2'>
+                        <div class='row'>
+                            <div class='col-9' id='forecastDate1'>
+                            </div>
+                            <div class='col-9' id='forecasticondiv'>
+                                <div class='row'>
+                                    <img class='align-self-center' src="" alt="" id="forecastIcon1" />
+                                </div>
+                            </div>
+                            <div class='col-9' id='forecastTemp1'>
+                            </div>
+                            <div class='col-9' id='forecastHumidity1'>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id='forecasts' class='col-2'>
+                        <div class='row'>
+                            <div class='col-9' id='forecastDate2'>
+                            </div>
+                            <div class='col-9' id='forecasticondiv'>
+                                <div class='row'>
+                                    <img class='align-self-center' src="" alt="" id="forecastIcon2" />
+                                </div>
+                            </div>
+                            <div class='col-9' id='forecastTemp2'>
+                            </div>
+                            <div class='col-9' id='forecastHumidity2'>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id='forecasts' class='col-2'>
+                        <div class='row'>
+                            <div class='col-9' id='forecastDate3'>
+                            </div>
+                            <div class='col-9' id='forecasticondiv'>
+                                <div class='row'>
+                                    <img class='align-self-center' src="" alt="" id="forecastIcon3" />
+                                </div>
+                            </div>
+                            <div class='col-9' id='forecastTemp3'>
+                            </div>
+                            <div class='col-9' id='forecastHumidity3'>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id='forecasts' class='col-2'>
+                        <div class='row'>
+                            <div class='col-9' id='forecastDate4'>
+                            </div>
+                            <div class='col-9' id='forecasticondiv'>
+                                <div class='row'>
+                                    <img class='align-self-center' src="" alt="" id="forecastIcon4" />
+                                </div>
+                            </div>
+                            <div class='col-9' id='forecastTemp4'>
+                            </div>
+                            <div class='col-9' id='forecastHumidity4'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Scripts for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+<script src="./Assets/script.js"></script>
+
+</html>

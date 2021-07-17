@@ -1,0 +1,194 @@
+#headerRow {
+    height: 100px;
+    background-color: rgb(52, 58, 64);
+}
+
+#header {
+    height: 100%;
+}
+
+#header p {
+    width: fit-content;
+    margin: auto;
+    font-size: 50px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+#side {
+    background-color: #F8F9FA;
+    height: auto;
+}
+
+#header2 p {
+    font-size: 30px;
+    margin: 24px 0px 12px 10px;
+    color: rgb(52, 58, 64);
+    font-weight: 500;
+}
+
+#search,
+#input,
+#searchbtn {
+    height: 50px;
+}
+
+#search {
+    margin-left: 12px;
+}
+
+#input {
+    padding-right: 0;
+}
+
+#searchbtn {
+    width: 50px;
+    padding: 0;
+    border: none;
+    background-color: #007BFF;
+}
+
+#history {
+    margin: 30px;
+    padding: 0;
+    margin-left: 24px;
+    border-style: solid;
+    border-color: #eeeeee;
+    border-radius: 1%;
+    border-bottom: none;
+    height: auto;
+}
+
+.cities {
+    font-size: 20px;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    color: rgb(52, 58, 64);
+    font-weight: 400;
+    border: none;
+    border-bottom: 3px solid #eeeeee;
+    background-color: white;
+}
+
+#main {
+    height: auto;
+}
+
+#current {
+    margin: 24px;
+    margin-left: 48px;
+    height: 300px;
+    padding: 0;
+}
+
+#current {
+    border-style: solid;
+    border-color: #eeeeee;
+    border-radius: 1%;
+}
+
+#header3 {
+    font-size: 30px;
+    padding: 0 0 0 12px;
+    margin: 24px 0px 50px 24px !important;
+    color: rgb(52, 58, 64);
+    font-weight: 600;
+}
+
+#icondiv {
+    padding: 0;
+    margin: 24px 0px 50px 0px;
+}
+
+#temperature,
+#humidity,
+#wind,
+#UVdiv {
+    font-size: 20px;
+    padding-right: 0px;
+    margin: 5px 0px 5px 24px;
+    color: rgb(52, 58, 64);
+    font-weight: 400;
+}
+
+#UVI {
+    font-size: 20px;
+    margin: 5px;
+    padding: 0;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 10%;
+    background-color: rgb(211, 29, 29);
+}
+
+#header4 {
+    font-size: 25px;
+    margin: 25px 0px 12px 24px;
+    color: rgb(52, 58, 64);
+    font-weight: 600;
+}
+
+#forecasts {
+    height: auto;
+    background-color: #007BFF;
+    border-radius: 5%;
+    margin: 15px;
+}
+
+#forecastDate0,
+#forecastDate1,
+#forecastDate2,
+#forecastDate3,
+#forecastDate4,
+#forecastTemp0,
+#forecastTemp1,
+#forecastTemp2,
+#forecastTemp3,
+#forecastTemp4,
+#forecastHumidity0,
+#forecastHumidity1,
+#forecastHumidity2,
+#forecastHumidity3,
+#forecastHumidity4 {
+    font-size: 17px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+
+#forecastDate0,
+#forecastDate1,
+#forecastDate2,
+#forecastDate3,
+#forecastDate4 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#forecastIcon0,
+#forecastIcon1,
+#forecastIcon2,
+#forecastIcon3,
+#forecastIcon4 {
+    margin: auto;
+    align-self: center;
+    height: 90px;
+    width: 100px;
+}
+
+#forecasticondiv {
+    margin: auto;
+    padding: 0;
+}
+
+
+/* PARENT.loading {
+    visibility: hidden
+}*/
